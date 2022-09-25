@@ -1,0 +1,35 @@
+get http://localhost:4000/
+Authorization: bearer eyJhbGciOiJIUz1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjQwMzMzMTgsImV4cCI6MTY2NDAzMzM0OCwiYXVkIjoiNjMyZTdlODNmNDA1ZDRkNTc5ZWNjNjVmIiwiaXNzIjoidGVzdC50ZXN0In0.24W8-_P8xQBCyKjQIofv29ISrNLLTIL7IxYXm3R2Rls
+
+###
+post http://localhost:4000/Auth/register
+Content-Type: application/json
+
+{
+    "email":"amitkrmishra1.864@gmail.com",
+    "password":"9643@Amit"
+}
+
+###
+post http://localhost:4000/Auth/login
+Content-Type: application/json
+
+{
+    "email":"amitkrmishra1.864@gmail.com",
+    "password":"9643@Amit"
+}
+
+###
+post http://localhost:4000/Auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjQwNzA3MTcsImV4cCI6MTY5NTYyODMxNywiYXVkIjoiNjMyZmIwZjM3YWZjZjkyYzAxYjE4YTNmIiwiaXNzIjoidGVzdEB0ZXN0LmNvbSJ9.iFYZjgBzU0WN5W_m7oq6f5wSdM96GfsfMaBTgyIpLz0"
+}
+
+###
+DELETE http://localhost:4000/Auth/logout
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjQwNzEwNzYsImV4cCI6MTY5NTYyODY3NiwiYXVkIjoiNjMyZmIwZjM3YWZjZjkyYzAxYjE4YTNmIiwiaXNzIjoidGVzdEB0ZXN0LmNvbSJ9.LfWCW65T_va2GqAIadJw5H3dr67nOkPjTUtWCTbiVrA"}
