@@ -10,7 +10,7 @@ The application is production ready.
 To start setting up the project
 Step 1: Clone the repo
 
-git clone https://github.com/trulymittal/API-Authentication-NodeJs.git
+git clone https://github.com/JWT.git
 Step 2: cd into the cloned repo and run:
 
 npm install
